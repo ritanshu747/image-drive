@@ -5,7 +5,7 @@ import FormAction from './formaction'; // Assuming this component includes the f
 import { toast } from 'react-hot-toast';
 import { signupFields } from '../constant/FormFields'; // Assuming signupFields are defined elsewhere
 
-const API_URL = 'http://localhost:4000/api/v1/auth';
+const API_URL = 'https://image-drive-server-1.onrender.com/api/v1/auth';
 
 const fields = signupFields;
 let fieldsState = {};

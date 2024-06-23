@@ -35,7 +35,7 @@ const FileUploadComponent = () => {
       formData.append('file', file);
       formData.append('name', name);
 
-      const response = await axios.post('http://localhost:4000/api/v1/upload/imageUpload', formData, {
+      const response = await axios.post('https://image-drive-server-1.onrender.com/api/v1/upload/imageUpload', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
@@ -57,7 +57,7 @@ const FileUploadComponent = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:4000/api/v1/search/imageSearch', {
+      const response = await axios.post('https://image-drive-server-1.onrender.com/api/v1/search/imageSearch', {
         name: searchName,
       });
 

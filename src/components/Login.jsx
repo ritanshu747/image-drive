@@ -6,7 +6,7 @@ import { toast } from 'react-hot-toast';
 import { loginFields } from '../constant/FormFields'; // Assuming loginFields are defined elsewhere
 import { useNavigate } from 'react-router-dom';
 
-const API_URL = 'http://localhost:4000/api/v1/auth'; // API endpoint for authentication
+const API_URL = 'https://image-drive-server-1.onrender.com/api/v1/auth'; // API endpoint for authentication
 
 const fields = loginFields;
 let fieldsState = {};
